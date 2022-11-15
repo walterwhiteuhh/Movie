@@ -7,7 +7,17 @@ from bs4 import BeautifulSoup
 URL = 'http://www.imdb.com/chart/top'
 
 def main():
-    pass
+    response = requests.get(URL)
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # print(soup.prettify())
+
+    movietags = soup.select('td.titleColumn')
+    inner_movietags = soup.select('td.titleColumn a')
+    ratingtags = soup.select('td.posterColumn span[name=ir]')
+    
+
 
 if __name__ == '__main__':
     main()
