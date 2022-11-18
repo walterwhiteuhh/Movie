@@ -36,14 +36,11 @@ def main():
         print(f'{titles[idx]} {years[idx]}, Rating: {ratings[idx]:.1f}, Starring: {actors_list[idx]}')
 
         # comment the next line out to test user input with docker run -t -i
-        break
+        #break
     
         user_input = input('Do you want another movie (y/[n])? ')
         if user_input != 'y':
             break
     
-
-
-
 if __name__ == '__main__':
     main()
