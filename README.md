@@ -9,3 +9,5 @@
 - More features will be available in future versions. 
 - Movie suggestions by genre, ratings, director or cast will be implemented in the next version.
 - A simple to use GUI with database connection will gain better usability
+
+- Finally the App will be dockerized to let it run in a Docker environment
